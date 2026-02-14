@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .layout {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        display: grid;
+      }
+      .box {
+        padding: 20px;
+        background-color: aqua;
+        color: red;
+        font-size: large;
+
+        border: 1px solid white;
+      }
+
+      .header {
+        grid-column: 1/4;
+      }
+      .aside {
+        grid-row: 2/4;
+      }
+      .section {
+        grid-column: 2/4;
+      }
+      .main {
+        grid-column: 2/4;
+      }
+      .footer {
+        grid-column: 1/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="box header">Header</div>
+      <div class="box aside">aside1</div>
+      <div class="box section">section</div>
+      <div class="box main">main</div>
+      <div class="box footer">footer</div>
+    </div>
+  </body>
+</html>

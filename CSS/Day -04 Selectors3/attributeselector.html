@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Attribute Selectors */
+      /* Targeting By their attribute names like [type] */
+      input[type] {
+        border: 2px solid blue;
+      }
+      /* 2. By Exact value of attribute*/
+      input[type="password"] {
+        border: 2px solid red;
+      }
+      input[type="email"] {
+        border: 2px solid green;
+      }
+
+      /* 3. targeting the word prsent anywhere int the attribute value*/
+      a[href*="google"] {
+        color: orchid;
+        text-decoration: none;
+      }
+
+      /* 4.targeting the word is present inside the entire  attriute value */
+      button[class~="btn"] {
+        background-color: yellow;
+        padding: 8px 12px;
+        font-size: 20px;
+        color: white;
+      }
+      .primary {
+        border: 2px solid blue;
+      }
+      /* 5. Ending with value */
+      img[src$=".png"] {
+        border: 4px solid purple;
+        width: 150px;
+      }
+      img[src$=".jpg"] {
+        border: 4px solid orange;
+        width: 300px;
+      }
+
+      /* 6. Starting with value */
+      p[class^="First"] {
+        background-color: rebeccapurple;
+      }
+      p[class^="Second"] {
+        background-color: teal;
+      }
+
+      /* 7. Hyphen(-) separated value */
+
+      p[class|="en"] {
+        font-size: 24px;
+        font-weight: bold;
+        border: 2px solid rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="" id="" placeholder="Enter text here" />
+    <input type="password" name="" id="" placeholder="Enter your password" />
+    <input type="email" name="" id="" placeholder="Enter your email" />
+    <br /><br />
+    <!-- Links -->
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.gmail.com">Gmail</a>
+
+    <!-- Buttons -->
+    <button class="btn primary">Primary</button>
+    <button class="btn secondary">Secondary</button>
+    <br /><br />
+    <!-- Images -->
+    <img src="banner.jpg" alt="Banner Image" />
+    <img src="logo.png" alt="Logo Image" />
+    <br /><br />
+    <!-- Paragraphs -->
+    <p class="First Para">First Paragraph</p>
+    <p class="Second Para">Second Paragraph</p>
+    <br /><br />
+    <!-- paragraph with Hyphen(-) language names -->
+    <p class="en-IN">Namaste</p>
+    <p class="en">Hello</p>
+    <p class="de-DE">Guten Tag</p>
+    <p class="es-ES">Hola</p>
+    <p class="it-IT">Ciao</p>
+  </body>
+</html>

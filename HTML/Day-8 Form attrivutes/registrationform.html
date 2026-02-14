@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Registration Form</legend>
+        <table>
+          <tr>
+            <td><label for="">Firstname:</label></td>
+            <td><input type="text" placeholder="Enter your firstname" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="">Lastname:</label></td>
+            <td><input type="text" placeholder="Enter your lastname" /></td>
+          </tr>
+          <tr>
+            <td><label for="">DOB:</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Gender:</label></td>
+            <td>
+              <input type="radio" name="Gender" />Male
+              <input type="radio" name="Gender" />Female
+              <input type="radio" name="Gender" id="" />Others
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Skills:</label></td>
+            <td>
+              <label for="html"> <input type="checkbox" id="html" />HTML</label>
+              <label for="css"><input type="checkbox" id="css" />CSS</label>
+              <label for="javascript"
+                ><input type="checkbox" id="javascript" />JavaScript</label
+              >
+              <label for="react"
+                ><input type="checkbox" id="react" />React</label
+              >
+              <label for="nodejs"
+                ><input type="checkbox" id="nodejs" />Node.js</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select your course:</label></td>
+            <td>
+              <select name="course" id="course">
+                <option value="" disabled selected>
+                  Select any one course
+                </option>
+                <option value="bca">BCA</option>
+                <option value="btech">B.Tech</option>
+                <option value="mca">MCA</option>
+                <option value="mtech">M.Tech</option>
+                <option value="mba">MBA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Course Price</label></td>
+            <td>
+              15000<input
+                type="range"
+                step="5000"
+                min="15000"
+                max="35000"
+              />35000
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select a PL Language</label></td>
+            <td>
+              <input type="text" list="languages" />
+              <datalist id="languages">
+                <option value="Hinglish">Hinglish</option>
+                <option value="English">English</option>
+                <option value="gujarati">gujarati</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Chindi">Chindi</option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Address:</label></td>
+            <td>
+              <textarea
+                name="address"
+                id="address"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Upload Resume:</label></td>
+            <td><input type="file" accept=".pdf" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Terms & Conditions:</label></td>
+            <td>
+              <input type="checkbox" id="terms" />
+              <label for="terms">I agree to the terms and conditions</label>
+            </td>
+        </tr>
+            <tr>
+                <td><input type="button" value="Reset"></td>
+                <td><input type="button" value="Submit"></td>
+            </tr>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
+

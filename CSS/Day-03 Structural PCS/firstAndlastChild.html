@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* first-child and last-child selector */
+      p:first-child {
+        color: blue;
+        background-color: lightgreen;
+        padding: 10px;
+        margin: 5px;
+      }
+      div p:first-child {
+        color: white;
+        background-color: red;
+        padding: 10px;
+        margin: 5px;
+      }
+      div p:last-child {
+        color: yellow;
+        background-color: purple;
+        padding: 10px;
+        margin: 5px;
+      }
+      p:last-child {
+        color: black;
+        background-color: yellowgreen;
+        padding: 10px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>this is paragraph number 1</p>
+    <div>
+      <p>this is paragraph number 2</p>
+      <p>this is paragraph number 3</p>
+      <p>this is paragraph number 4</p>
+      <p>this is paragraph number 5</p>
+      <p>this is paragraph number 6</p>
+      <p>this is paragraph number 7</p>
+    </div>
+    <p>this is paragraph number 8</p>
+    <p>this is paragraph number 9</p>
+    <p>this is paragraph number 10</p>
+  </body>
+</html>

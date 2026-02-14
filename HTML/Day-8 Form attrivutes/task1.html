@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend><h2>Personal Information</h2></legend>
+        <table>
+          <tr>
+            <td><label for="firstname">First Name:</label></td>
+            <td>
+              <input type="text" name="firstname" id="firstname" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastname">Last Name:</label></td>
+            <td>
+              <input type="text" name="lastname" id="lastname" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" id="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="">Date Of Birth:</label></td>
+            <td><input type="date" name="dob" id="dob" required /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="tel" name="phone" id="phone" required /></td>
+          </tr>
+          <tr>
+            <td><label for="city">Gender:</label></td>
+            <td>
+              <input type="radio" name="Gender" id="" />Male
+              <input type="radio" name="Gender" id="" />Female
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend><h2>Academic Information</h2></legend>
+        <table>
+          <tr>
+            <td><label for="">Select your Course:</label></td>
+            <td>
+              <select name="" id="">
+                <option value="" disabled selected>
+                  --Select your Course--
+                </option>
+                <option value="Java Full Stack">Java Full Stack</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mern Stack">Mern Stack</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="skill">Skills:</label></td>
+            <td>
+              <input type="text" name="" id="" list="skill" />
+              <datalist id="skill">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JavaScript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea name="" id=""></textarea></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h2>Login Credentials</h2>
+        </legend>
+        <table>
+          <tr>
+            <td><label for="username">Username:</label></td>
+            <td>
+              <input type="text" name="username" id="username" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td>
+              <input type="password" name="password" id="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirmpassword">Confirm Password:</label></td>
+            <td>
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend><h2>Login Credentials</h2></legend>
+        <table>
+          <tr>
+            <td>
+              <label for="">Terms & Conditions:</label>
+            </td>
+            <td>
+              <input type="checkbox" name="" id="" />I accept terms and
+              conditions.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="reset" value="Reset" />
+            </td>
+            <td>
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid;
+      margin: 30px auto;
+    }
+    #box1 {
+      background-image: radial-gradient(yellow, blue);
+    }
+    #box2 {
+      background-image: radial-gradient(
+        violet 0% 15%,
+        indigo 15% 30%,
+        green 30% 45%,
+        blue 45% 60%,
+        yellow 60% 75%,
+        orange 75% 90%,
+        red 90%
+      );
+    }
+    #box3 {
+      background-image: repeating-radial-gradient(red 0% 10%, yellow 10% 20%);
+    }
+    #box4 {
+      background-image: repeating-radial-gradient(black 0% 5%, white 5% 10%);
+    }
+    #box5 {
+      background-image: repeating-conic-gradient(black 0% 5%, white 5% 10%);
+      animation: rotate 5s linear infinite;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <h1>Radial Gradient in CSS</h1>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+  </body>
+</html>

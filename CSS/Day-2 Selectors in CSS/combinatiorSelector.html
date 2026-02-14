@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Descendant selector(space) */
+      div p {
+        color: red;
+        background-color: blue;
+      }
+      section p {
+        color: yellow;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Combinator Selectors</h1>
+    <h2>1. Descendant selector</h2>
+    <div>
+      <h1>Heading -1</h1>
+      <p>This is a paragraph 1</p>
+      <main>
+        <h1>heading -2</h1>
+        <p>This is a paragraph 2</p>
+        <article>
+          <p>This is a paragraph 3</p>
+        </article>
+      </main>
+    </div>
+
+    <section>
+      <p>This is a paragraph inside section</p>
+    </section>
+  </body>
+</html>

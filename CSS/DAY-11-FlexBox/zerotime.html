@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Noto Sans", sans-serif;
+      }
+      header {
+        width: 100%;
+        height: 72px;
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      aside {
+        width: 20%;
+        height: 72px;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      aside img {
+        width: 180px;
+      }
+      nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      ul {
+        width: 70%;
+        height: 72px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      ul li {
+        list-style: none;
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      #first {
+        color: #f57c00;
+      }
+      button {
+        padding: 8px 20px;
+        background-color: #f57c00;
+        border: 0px;
+        color: white;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid;
+      }
+      .bg-image {
+        width: 100%;
+        height: calc(100vh - 72px);
+        /* border: 3px solid red; */
+        background-image: url(https://zerotimesolutions.com/assets/images/hero-banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+      }
+      .main-content {
+        width: 100%;
+        height: calc(100vh - 72px);
+        /* border: 3px solid red; */
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        width: 50%;
+        height: 250px;
+        /* border: 2px solid white; */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      h2 {
+        font-size: 35px;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+      }
+      span {
+        color: #f57c00;
+      }
+      p {
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <aside>
+        <img
+          src="https://zerotimesolutions.com/assets/images/black-logo-zerotime.svg"
+          alt=""
+        />
+      </aside>
+      <nav>
+        <ul>
+          <li>
+            <a id="first" href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Services</a>
+          </li>
+          <li>
+            <a href="">Carrer</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+        <button>Join Us</button>
+      </nav>
+    </header>
+    <section>
+      <div class="bg-image"></div>
+      <div class="main-content">
+        <main>
+          <h2>
+            Building the <span>Future</span> of <span>Website</span> &
+            <span>Mobile Apps</span>, TODAY!
+          </h2>
+          <p>
+            Engineer your ideas into digital products & resolve your technical
+            setback to win the market competition with our app developers and
+            design wizards!
+          </p>
+          <button>Get Started</button>
+        </main>
+      </div>
+    </section>
+  </body>
+</html>

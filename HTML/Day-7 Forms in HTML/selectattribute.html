@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Select Attribute in HTML</h1>
+    <form action="">
+      <label for="">Select Skills:</label>
+      <select name="skill" id="skill" multiple size="1">
+        <option value="" disabled selected>-- Select any Option --</option>
+        <optgroup label="Frontend">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="tailwindcss">Tailwind CSS</option>
+          <option value="reactjs">React JS</option>
+        </optgroup>
+        <optgroup label="Backend">
+          <option value="nodejs">Node JS</option>
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="expressjs">Express JS</option>
+        </optgroup>
+        <optgroup label="Database">
+          <option value="sql">SQL</option>
+          <option value="mongodb">Mongo DB</option>
+          <option value="postgresql">PostgreSQL</option>
+        </optgroup>
+      </select>
+
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

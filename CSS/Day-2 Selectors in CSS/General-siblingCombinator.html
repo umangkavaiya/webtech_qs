@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* General sibling combinator(~) */
+      h1 ~ p {
+        color: orange;
+        background-color: lightblue;
+      }
+      h1 ~ main {
+        border: 2px solid red;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>General Sibling Combinator</h1>
+    <div>
+      <h1>Title</h1>
+      <p>Sub-title 1</p>
+      <p>Sub-title 2</p>
+      <p>Sub-title 3</p>
+      <main>
+        <h1>title-1</h1>
+        <p>sub title 4</p>
+        <span>span</span>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 600px;
+        height: 150px;
+        background-color: tomato;
+        display: flex;
+        flex-direction: row;
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+        background-color: teal;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #parent1 {
+        justify-content: start;
+        align-items: start;
+      }
+      #parent2 {
+        justify-content: center;
+        align-items: center;
+      }
+      #parent3 {
+        justify-content: end;
+        align-items: end;
+      }
+      #parent4 {
+        justify-content: space-evenly;
+        /* align-items: center; */
+      }
+      #parent5 {
+        justify-content: space-around;
+      }
+      #parent6 {
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Box in CSS</h1>
+    <h2>justify-content:start</h2>
+    <div class="parent" id="parent1">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h2>justify-content:center</h2>
+    <div class="parent" id="parent2">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h2>justify-content:end</h2>
+    <div class="parent" id="parent3">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h2>justify-content:space-evenly</h2>
+    <div class="parent" id="parent4">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h2>justify-content:space-around</h2>
+    <div class="parent" id="parent5">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+    <hr />
+    <h2>justify-content:space-between</h2>
+    <div class="parent" id="parent6">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+    </div>
+  </body>
+</html>
