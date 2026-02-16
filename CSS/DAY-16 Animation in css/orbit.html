@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        /* width: 100vw; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .moon-orbit {
+        width: 400px;
+        height: 400px;
+        border: 1px solid;
+        position: absolute;
+        border-radius: 50%;
+        animation: rotate 5s linear infinite;
+      }
+      .moon {
+        width: 80px;
+        height: 80px;
+        border: 1px solid;
+        border-radius: 50%;
+        transform: translate(25px, 10px);
+        background-image: url(https://media.istockphoto.com/id/584764738/vector/realistic-full-moon.jpg?s=612x612&w=0&k=20&c=7IOGLFxp6LzatVCGOwtXMgElNC1cMeTOAPzO5I6olvc=);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 180%;
+      }
+      .earth {
+        width: 300px;
+        height: 300px;
+        border: 1px solid;
+        border-radius: 50%;
+        background-image: url(https://thumbs.dreamstime.com/b/realistic-earth-high-quality-render-planet-isolated-black-background-40044176.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 110%;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <style></style>
+  </head>
+  <body>
+    <div class="earth"></div>
+    <div class="moon-orbit">
+      <div class="moon"></div>
+    </div>
+  </body>
+</html>

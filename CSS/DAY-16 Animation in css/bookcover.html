@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .book {
+        width: 100%;
+        height: 100vh;
+        border: 10px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 2500px;
+      }
+      .front-page {
+        width: 35%;
+        height: 70%;
+        background-color: brown;
+        position: absolute;
+        transition: all 0.5s linear;
+        transform-origin: 0% 0%;
+        margin-left: 100px;
+      }
+      .back-page {
+        width: 35%;
+        height: 70%;
+        margin-left: 100px;
+        background-image: url(https://images.immediate.co.uk/production/volatile/sites/3/2021/12/spider-man-fa41848.jpeg?quality=90&crop=8px,125px,1384px,922px&fit=700,466);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .front-page:hover {
+        transform: rotateY(-180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book">
+      <div class="front-page"></div>
+      <div class="back-page"></div>
+    </div>
+  </body>
+</html>
