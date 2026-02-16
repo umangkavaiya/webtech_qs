@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: black;
+        color: white;
+      }
+      .box {
+        width: 300px;
+        height: 500px;
+        /* border: 1px solid white; */
+        border-radius: 20px;
+        padding: 20px;
+        overflow: hidden;
+
+        /* background image default properties  */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        /* transform-origin: 0% 0%; */
+      }
+
+      p {
+        margin-top: 50px;
+        font-size: 17px;
+      }
+      #sub-child1 {
+        background-image: url(https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2F120d1e8147d7419199b04dbed7888a2b);
+      }
+      #sub-child2 {
+        background-image: url(https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2F366555915c984b1eb87c6597c416a6f5);
+      }
+      #sub-child3 {
+        background-image: url(https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2Fb537d3eea233499988fe39fb7db07bd8);
+      }
+      #sub-child4 {
+        background-image: url(https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2F97b43f3cd1904644b27e66b5d96f1b3d);
+      }
+      .sub-child {
+        width: 300px;
+        height: 500px;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        /* border: 5px solid green; */
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      h3 {
+        position: absolute;
+        z-index: 1;
+        font-size: 25px;
+      }
+      .box:hover .sub-child {
+        margin-top: 80%;
+        height: 52%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1">
+      <h3>Marketing</h3>
+      <p>Product launch and how-to videos to get people to buy your stuff</p>
+      <div class="sub-child" id="sub-child1"></div>
+    </div>
+    <div class="box" id="box2">
+      <h3>Learning & Development</h3>
+      <p>
+        Internal training videos that your team will actually pay attention to.
+      </p>
+      <div class="sub-child" id="sub-child2"></div>
+    </div>
+    <div class="box" id="box3">
+      <h3>Sales Enablement</h3>
+      <p>
+        Sales training videos that help your team turn cold leads into warm bags
+        of money.
+      </p>
+      <div class="sub-child" id="sub-child3"></div>
+    </div>
+    <div class="box" id="box4">
+      <h3>Support</h3>
+      <p>
+        Sales training videos that help your team turn cold leads into warm bags
+        of money.
+      </p>
+      <div class="sub-child" id="sub-child4"></div>
+    </div>
+  </body>
+</html>
