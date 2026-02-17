@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .scroller {
+        width: 100%;
+        padding: 20px 0px;
+        /* border: 1px solid black; */
+        background-color: aliceblue;
+        overflow: hidden;
+      }
+      .scroller-track {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+        /* overflow: hidden; */
+        /* animation: box duration timing-function delay iteration-count direction
+          fill-mode; */
+        animation: box-scroller 5s linear infinite;
+      }
+      .box {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 0px 10px;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        box-shadow:
+          rgba(0, 0, 0, 0.1),
+          0px 4px 12px;
+      }
+      .scroller-track:hover {
+        animation-play-state: paused;
+      }
+      #box1 {
+        background-image: url(./images/download.svg);
+      }
+      #box2 {
+        background-image: url(./images/download\ \(1\).svg);
+      }
+      #box3 {
+        background-image: url(./images/download\ \(2\).svg);
+      }
+      #box4 {
+        background-image: url(./images/download\ \(3\).svg);
+      }
+      #box5 {
+        background-image: url(./images/download\ \(4\).svg);
+      }
+
+      #box6 {
+        background-image: url(./images/download\ \(5\).svg);
+      }
+
+      #box7 {
+        background-image: url(./images/download\ \(6\).svg);
+      }
+      /*
+      #box8 {
+        background-image: url(./images/download\ \(7\).svg);
+      }
+      #box9 {
+        background-image: url(./images/download\ \(8\).svg);
+      }
+      #box10 {
+        background-image: url(./images/download\ \(9\).svg);
+      } */
+
+      @keyframes box-scroller {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroller">
+      <div class="scroller-track">
+        <!-- 1st set -->
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+
+        <!-- 2nd(duplicate set) set -->
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+        <div class="box" id="box7"></div>
+      </div>
+    </div>
+  </body>
+</html>
