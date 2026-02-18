@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+      }
+      .parent {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        /* border: 1px solid black; */
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .box {
+        width: 30%;
+        height: 500px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      #box1 {
+        background-image: url(https://images.indianexpress.com/2018/04/avengers-iron-man.jpg?w=350);
+      }
+      #box2 {
+        background-image: url(https://images.indianexpress.com/2018/04/avengers-thor.jpg?w=350);
+      }
+      #box3 {
+        background-image: url(https://i.pinimg.com/736x/5e/6a/01/5e6a01e41322b9454a88b9d135ec0b91.jpg);
+      }
+      @media screen and (min-width: 320px) and (max-width: 700px) {
+        h1 {
+          text-align: center;
+          font-size: 35px;
+          text-decoration: underline;
+        }
+        .parent {
+          flex-direction: column;
+        }
+        .box {
+          width: 90%;
+          border: 1px solid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media queries</h1>
+    <div class="parent">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+    </div>
+  </body>
+</html>
