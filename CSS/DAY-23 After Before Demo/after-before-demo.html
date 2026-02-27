@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      section {
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      aside {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      aside > span {
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+      }
+      aside > span:last-child {
+        color: orange;
+      }
+      nav {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      ul {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      ul li {
+        list-style: none;
+        position: relative;
+      }
+      ul li a {
+        text-decoration: none;
+        color: orange;
+      }
+      nav button {
+        border: 0px;
+        padding: 8px 20px;
+        background-color: orange;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+      nav ul li::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        height: 15px; /* this height is called safe gap for hovering the list*/
+        background: transparent;
+      }
+      nav ul li:hover .hidden-content {
+        display: block;
+      }
+      .hidden-content {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0px;
+        width: 200px;
+        background-color: orange;
+        border-radius: 5px;
+        animation: topToBottom 0.2s linear forwards;
+      }
+      .hidden-content ol {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+      }
+      ol li {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 3px;
+      }
+      ol li:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      @keyframes topToBottom {
+        from {
+          transform: translateY(-20px);
+        }
+        to {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <aside>
+          <span>Travel</span>
+          <span>Buddy</span>
+        </aside>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Home</a>
+              <div class="hidden-content">
+                <ol>
+                  <li>List-1</li>
+                  <li>List-2</li>
+                  <li>List-3</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <a href="">Destinations</a>
+              <div class="hidden-content">
+                <ol>
+                  <li>List-1</li>
+                  <li>List-2</li>
+                  <li>List-3</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <a href="">Trips</a>
+              <div class="hidden-content">
+                <ol>
+                  <li>List-1</li>
+                  <li>List-2</li>
+                  <li>List-3</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <a href="">Events</a>
+              <div class="hidden-content">
+                <ol>
+                  <li>List-1</li>
+                  <li>List-2</li>
+                  <li>List-3</li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+          <button>Book Slot</button>
+        </nav>
+      </header>
+    </section>
+  </body>
+</html>

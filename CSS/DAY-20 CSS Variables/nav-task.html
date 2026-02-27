@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      section {
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        box-shadow:
+          rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header aside {
+        width: 17%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header aside span {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      header aside span:nth-child(1) {
+        color: #0077b6;
+      }
+      header aside span:nth-child(2) {
+        color: #e06f00;
+      }
+      header nav {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 8px;
+      }
+      header nav ul {
+        width: 85%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      header nav ul li {
+        list-style: none;
+        position: relative;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        color: #434343;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      header nav button {
+        width: 20%;
+        padding: 8px 20px;
+        border: 0px;
+        background-color: #e06f00;
+        color: white;
+        border-radius: 20px;
+        font-size: 16px;
+      }
+      header nav ul li:hover::before {
+        content: "";
+        width: 0%;
+        height: 2.5px;
+        position: absolute;
+        background-color: orange;
+        bottom: 0;
+        left: 0;
+        animation: underlineSlider 0.5s ease;
+      }
+      @keyframes underlineSlider {
+        from {
+          width: 0%;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <aside><span>Travel</span><span>Buddy</span></aside>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Home</a>
+              <div></div>
+            </li>
+            <li><a href="">Destinations </a></li>
+            <li><a href="">Packages</a></li>
+            <li><a href="">How It Works</a></li>
+          </ul>
+          <button>Book Now</button>
+        </nav>
+      </header>
+    </section>
+  </body>
+</html>

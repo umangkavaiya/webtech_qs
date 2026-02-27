@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px;
+      }
+      .wrapper {
+        width: 50%;
+        border: 1px solid;
+        margin: 20px auto;
+        background-color: aqua;
+        padding: 25px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        margin: auto;
+      }
+      h2 {
+        font-weight: 500;
+        padding: 10px 0px;
+      }
+      #wrapper1:hover #box1 {
+        display: none;
+      }
+      #wrapper2:hover #box2 {
+        visibility: hidden;
+      }
+      #wrapper3:hover #box3 {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>display: none vs visibility:hidden vs opacity: 0</h1>
+    <div class="wrapper" id="wrapper1">
+      <h2>Hover to see demo of display: none</h2>
+      <div class="box" id="box1"></div>
+    </div>
+    <div class="wrapper" id="wrapper2">
+      <h2>hover to see demo of visibility:hidden</h2>
+      <div class="box" id="box2"></div>
+    </div>
+    <div class="wrapper" id="wrapper3">
+      <h2>hover to see demo of visibility:hidden</h2>
+      <div class="box" id="box3"></div>
+    </div>
+  </body>
+</html>

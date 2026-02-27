@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background: linear-gradient(#6ac890, #5d6561 70vh 100vh);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .form-container {
+        width: 25%;
+        background-color: white;
+        border-radius: 20px;
+        padding: 35px 20px;
+      }
+      .form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 5px;
+        padding: 5px;
+        position: relative;
+      }
+      input {
+        padding: 12px 10px;
+        width: 100%;
+        outline: none;
+        border: 2px solid #6ac890;
+        border-radius: 5px;
+        caret-color: #3ea969;
+      }
+      label {
+        color: #3ea969;
+        font-weight: 500;
+        transform: all 0.3s ease;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        pointer-events: none;
+        background-color: white;
+        padding: 3px;
+      }
+      a {
+        text-decoration: none;
+        color: #308e56;
+        background-color: white;
+      }
+      #forgot {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+      }
+      #sign-in-container,
+      #sign-google-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .sign-in,
+      .sign-in-google {
+        padding: 10px 120px;
+        border: 0px;
+        color: white;
+        font-size: 15px;
+        border-radius: 30px;
+        font-weight: 500;
+        background-color: #5d6561;
+      }
+
+      #or-container {
+        border-top: 1px solid #848383;
+        margin-top: 15px;
+        position: relative;
+      }
+      span {
+        position: absolute;
+        top: -12px;
+        left: 45%;
+        font-size: 14px;
+        padding: 3px;
+        background-color: white;
+      }
+      input:focus ~ label,
+      input:not(:placeholder-shown) ~ label {
+        transform: translateY(-18px);
+        transition: all 0.2s ease-in-out;
+        font-size: 14px;
+      }
+      #password-container {
+        margin-bottom: -5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Floating Label Form Demo</h1>
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder=" " />
+          <label for="">E-mail</label>
+        </div>
+        <div class="form-group" id="password-container">
+          <input type="password" placeholder=" " />
+          <label for="">Password</label>
+        </div>
+        <div class="form-group" id="forgot">
+          <a href="">Forgot your password?</a>
+        </div>
+        <div class="form-group" id="sign-in-container">
+          <button class="sign-in">Sign in now</button>
+        </div>
+        <div class="form-group" id="or-container">
+          <span>OR</span>
+        </div>
+        <div class="form-group" id="sign-google-container">
+          <button class="sign-in-google">Sign in with Google</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
