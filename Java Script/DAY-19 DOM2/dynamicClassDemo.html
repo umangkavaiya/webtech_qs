@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .heading {
+        color: red;
+      }
+      .heading2 {
+        color: blue;
+      }
+      .commonPara {
+        background-color: yellow;
+      }
+      .dynamicClass {
+        background-color: teal;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="head" class="heading">Dynamic Class Name</h1>
+    <p class="para" id="para1">Paragraph - 1</p>
+    <p class="para" id="para2">Paragraph - 2</p>
+    <button onclick="removeBg()">Remove Class</button>
+    <button onclick="toggleClass()">Toggle Class</button>
+    <script>
+      let head = document.getElementById("head");
+      console.log(head);
+
+      //1. By using .className
+      //syntax: htmlElement.className = "value"
+      head.className = "heading2";
+
+      //2. Ny using .classList
+      // Syntax: htmlElement.classList
+      let p1 = document.getElementById("para1");
+      p1.classList.add("commonPara");
+
+      function removeBg() {
+        p1.classList.remove("commonPara");
+      }
+
+      function toggleClass() {
+        document.getElementById("para2").classList.toggle("dynamicClass");
+      }
+    </script>
+  </body>
+</html>

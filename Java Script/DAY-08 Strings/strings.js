@@ -78,6 +78,7 @@ console.log(str9.includes("javascript"));
 //? 16. toUpperCase
 //? 17. split()
 let str10 = "HTML CSS JS";
+console.log("for split");
 console.log(str10.split(" "));
 console.log(str10.split(""));
 
